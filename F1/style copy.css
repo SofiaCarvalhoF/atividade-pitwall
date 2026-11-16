@@ -1,0 +1,458 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #09090c;
+    color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+}
+
+.topo {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+}
+
+.subtitulo {
+    color: #ed171b;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.topo h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18 px;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+.topo h1 span,
+.hero h2 span {
+    color: #ed171b;
+}
+
+.descricao {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.layout {
+     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+    margin: auto;
+}
+
+.site {
+    background: #0c0c11;
+    border: 1px solid #292930;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.navbar {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: 1px solid #292930;
+    gap: 15px;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #ed171b;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: #ed171b;
+}
+
+.botao-nav,
+.btn {
+    background: #ed171b;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 12px 17px;
+    font-size: 10px;
+    font-weight: 800;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hero {
+
+    min-height: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    background: #101015;
+}
+
+
+
+
+.hero-info {
+    padding: 45px 30px;
+}
+
+.vermelho {
+    color: #ed171b;
+    font-size: 10px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    font-size: 54px;
+    line-height: .95;
+    margin-bottom: 15px;
+}
+
+.hero-info p:not(.vermelho) {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 5px;
+}
+
+.hero-image {
+    background:
+        linear-gradient(90deg, rgba(0,0,0,.25), transparent),
+        url("assets/gp-sp.jpg") center/cover no-repeat;
+    border-left: 12px solid #ed171b;
+    transform: skewX(-8deg);
+    margin-right: -20px;
+    position: relative;
+}
+
+.estatisticas {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    transform: skewX(8deg);
+    text-shadow: 0 2px 5px #000;
+}
+
+.estatisticas strong {
+    display: block;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.estatisticas small {
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.secao {
+    padding: 30px;
+    border-top: 1px solid #25252b;
+}
+
+.titulo-secao {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.titulo-secao span {
+    color: #ed171b;
+    font-size: 13px;
+}
+
+.grid-pilotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.piloto {
+    background: #18181f;
+    padding: 15px;
+    border-top: 3px solid;
+    min-width: 0;
+}
+
+.vermelho-borda { border-color: #ed171b; }
+.amarelo-borda { border-color: #ff9b00; }
+.verde-borda { border-color: #00cba5; }
+.cinza-borda { border-color: #999; }
+
+.numero {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    color: #ed171b;
+    opacity: .65;
+}
+
+.piloto:nth-child(2) .numero { color: #ff9b00; }
+.piloto:nth-child(3) .numero { color: #00cba5; }
+.piloto:nth-child(4) .numero { color: #aaa; }
+
+.piloto h3 {
+    font-size: 11px;
+}
+
+.piloto small {
+    color: #aaa;
+    font-size: 10px;
+}
+
+.filtros {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 9px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: #101015;
+    color: white;
+    border: 1px solid #33333b;
+    outline: none;
+    font-family: inherit;
+    font-size: 11px;
+    margin-bottom: 13px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ed171b;
+}
+
+.filtros button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    text-align: left;
+}
+
+th {
+    color: #aaa;
+    font-size: 9px;
+    padding: 12px 8px;
+}
+
+td {
+    padding: 13px 8px;
+    border-top: 1px solid #292930;
+}
+
+tbody tr:nth-child(1) {
+    background: rgba(237,23,27,.12);
+}
+
+td:first-child {
+    font-weight: 900;
+}
+
+.ingressos-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.precos p {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.precos div {
+    padding: 12px 0;
+    border-bottom: 1px solid #333;
+    font-size: 11px;
+}
+
+.precos strong {
+    color: #ed171b;
+    float: right;
+}
+
+form {
+    background: #18181f;
+    border-top: 3px solid #ed171b;
+    padding: 20px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.btn-enviar {
+    width: 100%;
+    background: #ed171b;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: 900;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #292930;
+    color: #888;
+    font-size: 9px;
+}
+.vermelho {
+    color: #ed171b;
+}
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+    body {
+        padding: 12px;
+    }
+
+    .topo h1 {
+        font-size: 32px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 9px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-info {
+        padding: 30px 20px;
+    }
+
+    .hero h2 {
+        font-size: 43px;
+    }
+
+    .hero-image {
+        min-height: 220px;
+        margin: 0;
+        transform: none;
+        border-left: 0;
+        border-top: 8px solid #ed171b;
+    }
+
+    .estatisticas {
+        transform: none;
+    }
+
+    .grid-pilotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secao {
+        padding: 20px 12px;
+    }
+
+    .filtros {
+        grid-template-columns: 1fr;
+    }
+
+    .ingressos-layout {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 9px;
+    }
+
+    th, td {
+        padding: 9px 4px;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    #classificacao {
+        overflow-x: auto;
+    }
+}
+.separador {
+    width: 100%;
+    height: 8px;
+    background: repeating-conic-gradient(
+        #ed171b 0% 25%,
+        white 0% 50%
+    ) 0 0 / 32px 16px;
+    border-bottom: 2px solid #777;
+}
